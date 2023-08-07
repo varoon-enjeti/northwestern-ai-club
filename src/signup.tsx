@@ -10,6 +10,8 @@ export default function Signup() {
                 <input className="bg-gray-200 rounded w-full h-10 p-2" type="text" required/>
                 <p className="">Northwestern Email</p>
                 <input className="bg-gray-200 rounded w-full h-10 p-2" type="text" required/>
+                <p className="">NetID</p>
+                <input className="bg-gray-200 rounded w-full h-10 p-2" type="text" required/>
                 <p className="">Major</p>
                 <input className="bg-gray-200 rounded w-full h-10 p-2" type="text" required/>
                 <p className="">Graduation Year</p>
