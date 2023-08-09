@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+// import { getAnalytics } from "firebase/analytics";
 import { getDatabase, ref, set } from "firebase/database";
 
 const firebaseConfig = {
@@ -15,17 +15,23 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const db = getDatabase(app);
+// const analytics = getAnalytics(app);
 
 function newMember(firstName: String, lastName: String, email: String, netid: String, major: String, year: String) {
+// function newMember(firstName, lastName, email, netid, major, year) {
+  const db = getDatabase(app);
   set(ref(db, 'users/' + netid), {
     firstName: firstName,
     lastName: lastName,
     email: email,
     major: major,
     year: year
+  }).then(() => {
+    console.log(`New member ${netid} added successfully.`)
+  }) .catch((error) => {
+    console.error('Error adding new member:', error);
   });
+  console.log('Exited Succesfully.')
 }
 
 newMember("Varoon", "Enjeti", "VaroonEnjeti2025@u.northwestern.edu", "vve4153", "Computer Science", "2025")
