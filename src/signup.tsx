@@ -1,6 +1,9 @@
 import React from 'react';
+import { newMember } from '../server/firebase';
 
 export default function Signup() {
+    
+
     return (
         <div className="flex justify-center w-full h-full">
             <form className="flex flex-col content-center gap-2 w-1/3 h-full" action="">

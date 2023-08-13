@@ -15,9 +15,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-function newMember(firstName, lastName, email, netid, major, year){
+ export async function newMember(firstName: string, lastName: string, email: string, netid: string, major: string, year: string){
   try {
-    setDoc(doc(db, "users", netid), {
+    await setDoc(doc(db, "users", netid), {
       firstName: firstName,
       lastName: lastName,
       email: email,
@@ -32,7 +32,3 @@ function newMember(firstName, lastName, email, netid, major, year){
         console.log("Done");
     }
 }
-
-newMember("Varoon", "Enjeti", "VaroonEnjeti2025@u.northwestern.edu", "vve4153", "Computer Science", "2025");
-newMember("Varoon", "Enjeti", "VaroonEnjeti2025@u.northwestern.edu", "vve4151", "Computer Science", "2025");
-process.exit()
