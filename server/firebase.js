@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { initializeApp, deleteApp } from "firebase/app";
+import { getFirestore, collection, doc, setDoc } from "firebase/firestore";
+import { exit } from "process";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCRBNdSciIhOheTbcPr8WJHZoNyjM2y6Mo",
@@ -14,9 +15,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-async function newMember(firstName, lastName, email, netid, major, year){
+function newMember(firstName, lastName, email, netid, major, year){
   try {
-    const docRef = await addDoc(collection(db, "users/" + netid), {
+    setDoc(doc(db, "users", netid), {
       firstName: firstName,
       lastName: lastName,
       email: email,
@@ -27,7 +28,11 @@ async function newMember(firstName, lastName, email, netid, major, year){
   } catch (e) {
     console.error("Error adding new user " + netid + ".");
     console.log(e);
-  }
+  } finally {
+        console.log("Done");
+    }
 }
 
 newMember("Varoon", "Enjeti", "VaroonEnjeti2025@u.northwestern.edu", "vve4153", "Computer Science", "2025");
+newMember("Varoon", "Enjeti", "VaroonEnjeti2025@u.northwestern.edu", "vve4151", "Computer Science", "2025");
+process.exit()
