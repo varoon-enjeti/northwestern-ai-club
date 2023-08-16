@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { newMember } from './server/firebase';
+import { newMember } from './firebase';
 
 export default function Signup() {
     const [submitted, setSubmitted] = useState(0);
