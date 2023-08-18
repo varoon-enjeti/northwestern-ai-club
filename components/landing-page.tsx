@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function LandingPage() {
     return (
         <div className="w-full h-full bg-[url('/texture.svg')]">
