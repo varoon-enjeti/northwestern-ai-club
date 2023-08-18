@@ -8,7 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      colors: {
+        'nupurple': '#4E2A84',
+        'nulight': '#836EAA'
+      }
     },
   },
   plugins: [],
