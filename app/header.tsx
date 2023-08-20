@@ -1,14 +1,13 @@
 import Link from 'next/link'
-import About from './about';
 
 export default function Header() {
     return (
        <header className="h-16 w-2/3 fixed flex flex-row text-center gap-96">
             <div className='flex flex-row gap-10 text-center items-center'>
-                <Link href="/" className='mr-10'>
+                <Link href="landing-page/page" className='mr-10'>
                     <img src="nuai.png" className='h-16 w-16'/>
                 </Link>
-                <Link href="/" className='font-sans text-nupurple text-lg hover:text-nulight'>About</Link>
+                <Link href="./about" className='font-sans text-nupurple text-lg hover:text-nulight'>About</Link>
                 <Link href="/" className='font-sans text-nupurple text-lg hover:text-nulight'>Events</Link>
                 <Link href="/" className='font-sans text-nupurple text-lg hover:text-nulight'>Team</Link>
             </div>
