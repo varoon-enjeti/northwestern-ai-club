@@ -1,6 +1,6 @@
 export default function LandingPage() {
     return (
-        <div className="w-full h-full z-0 bg-[url('/texture.svg')]">
+        <div className="w-full h-full z-0 bg-[url('/texture.svg')]" id="landingpage">
             <div className="h-full w-full flex justify-center overflow-hidden pl-20 items-center bg-gradient-to-b from-white via-transparent via-40% to-white">
                 <div className="flex flex-col gap-3">
                     <p className='h-24 -ml-1 -mb-3 text-8xl tracking-tight font-sans font-bold text-transparent bg-clip-text bg-gradient-to-b from-nupurple via-nupurple via-65%'>Northwestern AI</p>
