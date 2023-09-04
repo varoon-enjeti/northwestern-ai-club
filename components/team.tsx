@@ -9,7 +9,7 @@ export default function Team() {
                     <a href="https://www.linkedin.com/feed/" className="hover:scale-105 duration-200" target="_blank">
                         <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-48 w-48 object-cover rounded-full border-4 border-gray-400'/>
                     </a>
-                    <p className="font-sans font-medium text-lg tracking-tight mt-3">Isaac ("Big Papi") Miller</p>
+                    <p className="font-sans font-medium text-lg tracking-tight mt-3">Isaac (&quot;Big Papi&quot;) Miller</p>
                     <p className="font-sans font-light tracking-tight">Co-President</p>
                 </div>
                 <div className="flex flex-col items-center">
