@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Header() {
     return (
-       <header className="h-16 w-2/3 fixed flex flex-row text-center gap-96 bg-gray-300">
+       <header className="h-16 w-full fixed flex flex-row text-center gap-96 bg-gray-300">
             <div className='flex flex-row gap-10 text-center items-center'>
                 <Link href="#landingpage" className='mr-10'>
                     <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-16 w-16'/>

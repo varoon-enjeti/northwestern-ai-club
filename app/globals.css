@@ -6,3 +6,16 @@ html {
     --scroll-behavior: smooth !important;
     scroll-behavior: smooth !important;
 }
+
+:invalid {
+    color: rgba(156, 163, 175);
+}
+
+#select:valid {
+    border: 2px solid #4E2A84;
+}
+
+#select:focus {
+    outline: none !important;
+    border: 2px solid #4E2A84;
+}
