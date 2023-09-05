@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Header Links Smooth Scroll */
+
 html {
     --scroll-behavior: smooth !important;
     scroll-behavior: smooth !important;
 }
+
+/* Join Form */
 
 :invalid {
     color: rgba(156, 163, 175);
@@ -18,4 +22,27 @@ html {
 #select:focus {
     outline: none !important;
     border: 2px solid #4E2A84;
+}
+
+/* Join Section Background */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#join {
+    background: linear-gradient(-45deg, #FFFFFF, #836EAA, #4E2A84);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }

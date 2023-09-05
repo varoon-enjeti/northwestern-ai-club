@@ -22,8 +22,10 @@ export default function Join() {
         // })
     }
 
+    // bg-gradient-to-br from-nupurple via-nulight to-white
+
     return (
-        <div className="w-full h-full bg-gradient-to-br from-nupurple via-nulight to-white" id="join">
+        <div className="w-full h-full " id="join">
             {submitted ? (<div className=''>User Submitted</div>) : (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
                     <p className="text-white font-sans font-bold text-4xl tracking-tight">Join the Club!</p>

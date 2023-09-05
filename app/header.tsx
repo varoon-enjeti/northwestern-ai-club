@@ -9,7 +9,7 @@ export default function Header() {
                     <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-16 w-16'/>
                 </Link>
                 <Link href="#about" className='font-sans text-nupurple text-lg hover:text-nulight'>About</Link>
-                <Link href="/" className='font-sans text-nupurple text-lg hover:text-nulight'>Events</Link>
+                <Link href="#events" className='font-sans text-nupurple text-lg hover:text-nulight'>Events</Link>
                 <Link href="#team" className='font-sans text-nupurple text-lg hover:text-nulight'>Team</Link>
             </div>
             <div className='flex flex-row items-center'>
