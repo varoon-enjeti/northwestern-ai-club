@@ -5,7 +5,7 @@ export default function Header() {
     return (
        <header className="h-16 w-full fixed flex flex-row text-center gap-96 bg-gray-300">
             <div className='flex flex-row gap-10 text-center items-center'>
-                <Link href="#landingpage" className='mr-10'>
+                <Link href="/" className='mr-10'>
                     <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-16 w-16'/>
                 </Link>
                 <Link href="#about" className='font-sans text-nupurple text-lg hover:text-nulight'>About</Link>

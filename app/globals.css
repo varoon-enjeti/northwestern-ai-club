@@ -46,3 +46,43 @@ html {
     animation: gradient 15s ease infinite;
     height: 100vh;
 }
+
+/* Load-In Animation */
+
+@keyframes loadOne {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes loadTwo {
+    from {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes loadThree {
+    from {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}

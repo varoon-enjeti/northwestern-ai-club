@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         'nupurple': '#4E2A84',
         'nulight': '#836EAA'
-      }
+      },
     },
   },
   plugins: [],
