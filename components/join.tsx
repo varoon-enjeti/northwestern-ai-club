@@ -29,7 +29,7 @@ export default function Join() {
             {submitted ? (<div className=''>User Submitted</div>) : (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
                     <p className="text-white font-sans font-bold text-4xl tracking-tight">Join the Club!</p>
-                    <form className="flex flex-col gap-7 w-1/3 h-100 px-10 py-10 bg-white drop-shadow-md rounded-3xl" onSubmit={submit}>
+                    <form className="flex flex-col gap-7 w-1/3 h-100 px-10 py-10 bg-white drop-shadow-lg rounded-3xl" onSubmit={submit}>
                         <div className='flex gap-4'>
                             <input 
                                 className="border-2 border-nulight rounded-xl w-full h-11 px-3 text-nupurple" 
