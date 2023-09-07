@@ -1,6 +1,7 @@
 'use client'
 
 import { FormEvent, useState } from 'react'
+import Image from 'next/image'
 
 export default function Join() {
     const [submitted, setSubmitted] = useState(0);
@@ -26,10 +27,28 @@ export default function Join() {
 
     return (
         <div className="w-full h-full " id="join">
-            {submitted ? (<div className=''>User Submitted</div>) : (
+            {submitted ? 
+            (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
                     <p className="text-white font-sans font-bold text-4xl tracking-tight">Join the Club!</p>
-                    <form className="flex flex-col gap-7 w-1/3 h-100 px-10 py-10 bg-white drop-shadow-lg rounded-3xl" onSubmit={submit}>
+                    <div className="flex flex-col items-center w-1/3 h-[470px] p-10 bg-white drop-shadow-lg rounded-3xl">
+                        <Image
+                            src="/nuai.png"
+                            alt='Northwestern AI logo'
+                            width={275}
+                            height={275}
+                            className='-mt-6 animate-[loadOne_2.5s_ease]'
+                        />
+                        <p className="text-nupurple font-sans font-bold text-4xl tracking-tight -mt-6 animate-[loadTwo_2.5s_ease]">Thanks for Joining!</p>
+                        <p className="text-nulight font-sans text-md tracking-tight animate-[loadThree_2.5s_ease]">An email confirmation has been sent.</p>
+                    </div>
+                </div>
+            ) 
+            : 
+            (
+                <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
+                    <p className="text-white font-sans font-bold text-4xl tracking-tight">Join the Club!</p>
+                    <form className="flex flex-col gap-7 w-1/3 h-[470px] px-10 py-10 bg-white drop-shadow-lg rounded-3xl" onSubmit={submit}>
                         <div className='flex gap-4'>
                             <input 
                                 className="border-2 border-nulight rounded-xl w-full h-11 px-3 text-nupurple" 
