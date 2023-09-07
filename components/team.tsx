@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Team() {
     return (
-        <div className="w-full h-full flex flex-col items-center gap-10" id="team">
-            <p className="font-sans font-bold text-5xl text-nupurple tracking-tight mt-[6rem]">Meet the Team!</p>
+        <div className="w-full h-full flex flex-col items-center justify-center gap-10" id="team">
+            <p className="font-sans font-bold text-5xl text-nupurple tracking-tight mt-12">Meet the Team!</p>
             <div className="flex flex-row gap-20">
                 <div className="flex flex-col items-center">
                     <a href="https://www.linkedin.com/feed/" className="hover:scale-105 duration-200" target="_blank">
