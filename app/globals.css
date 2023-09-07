@@ -86,3 +86,10 @@ html {
         opacity: 100%;
     }
 }
+
+/* Events Image Sizing */
+
+#discuss {
+    height: 36px;
+    width: 36px;
+}
