@@ -7,13 +7,13 @@ export default function Events() {
             <div className="flex items-center justify-center gap-10 2xl:mt-20">
                 <Eventcard
                     title={"Discussions"}
-                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate"}
+                    text={"We dive deep into AI's transformative impact on various industries and its societal implications. Join us for thought-provoking dialogues led by experts, faculty, and fellow members to explore the ever-evolving landscape of artificial intelligence. It's where curiosity sparks, ideas flourish, and knowledge grows."}
                     image={"/discuss.svg"}
                     id={"discuss"}
                 />
                 <Eventcard
                     title={"Guest Speakers"}
-                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate"}
+                    text={"We host industry leading experts, researchers, and innovators who will share their insights, experiences, and cutting-edge discoveries in AI. These events offer unique opportunities for networking, learning, and gaining valuable perspectives from influential figures in the AI community."}
                     image={"/speakers.svg"}
                     id={"speakers"}
                 />
