@@ -30,7 +30,7 @@ export default function Join() {
             {submitted ? 
             (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
-                    <p className="text-white font-sans font-bold text-4xl tracking-tight">Join the Club!</p>
+                    <p className="text-white font-sans font-bold text-4xl 2xl:text-5xl tracking-tight">Join the Club!</p>
                     <div className="flex flex-col items-center w-1/3 h-[470px] p-10 bg-white drop-shadow-lg rounded-3xl">
                         <Image
                             src="/nuai.png"
@@ -47,7 +47,7 @@ export default function Join() {
             : 
             (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
-                    <p className="text-white font-sans font-bold text-4xl tracking-tight">Join the Club!</p>
+                    <p className="text-white font-sans font-bold text-4xl 2xl:text-5xl tracking-tight">Join the Club!</p>
                     <form className="flex flex-col gap-7 w-1/3 h-[470px] px-10 py-10 bg-white drop-shadow-lg rounded-3xl" onSubmit={submit}>
                         <div className='flex gap-4'>
                             <input 
