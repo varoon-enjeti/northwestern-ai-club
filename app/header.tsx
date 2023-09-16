@@ -20,7 +20,7 @@ export default function Header() {
     }, []);
 
     return (
-       <header className="h-16 w-full fixed flex flex-row text-center bg-gray-300" id="header">
+       <header className="h-16 w-full fixed flex flex-row text-center bg-gray-300 z-50" id="header">
             {scrolled ? 
             (<div className="flex flex-row text-center xl:gap-[50vw] 2xl:gap-[65vw]">
                 <div className='flex flex-row gap-10 text-center items-center'>
