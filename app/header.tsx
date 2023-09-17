@@ -21,12 +21,6 @@ export default function Header() {
 
     const width = useWindowSize();
 
-    // const [width, setWidth] = useState(window.innerWidth);
-    // const breakpoint = 514;
-    // useEffect(() => {
-    //     window.addEventListener("resize", () => setWidth(window.innerWidth));
-    // }, []);
-
     if (width > breakpoint) {
         return (
         <header className="lg:h-16 w-full fixed flex flex-row text-center bg-gray-300 z-30" id="header">
@@ -86,7 +80,6 @@ export default function Header() {
 
 function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
-  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState(0);
 
   useEffect(() => {
