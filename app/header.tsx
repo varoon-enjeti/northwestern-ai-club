@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 514;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,14 +18,15 @@ export default function Header() {
         };
 
         window.addEventListener('scroll', handleScroll);
-
-    }, []);
-
-    const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 514;
-    useEffect(() => {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
+
     }, []);
+
+    // const [width, setWidth] = useState(window.innerWidth);
+    // const breakpoint = 514;
+    // useEffect(() => {
+    //     window.addEventListener("resize", () => setWidth(window.innerWidth));
+    // }, []);
 
     if (width > breakpoint) {
         return (
