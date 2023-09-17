@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
-    const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 514;
 
     useEffect(() => {
@@ -18,9 +17,9 @@ export default function Header() {
         };
 
         window.addEventListener('scroll', handleScroll);
-        window.addEventListener("resize", () => setWidth(window.innerWidth));
-
     }, []);
+
+    const width = useWindowSize();
 
     // const [width, setWidth] = useState(window.innerWidth);
     // const breakpoint = 514;
@@ -83,4 +82,29 @@ export default function Header() {
             <header className="h-12 w-full fixed flex flex-row text-center bg-gray-300 z-30"></header>
         );
     }
+}
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState(0);
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize(window.innerWidth);
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
 }
