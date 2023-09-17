@@ -7,7 +7,7 @@ export default function Home() {
                     <p className="w-2/3 text-2xl font-sans font-normal tracking-tight animate-[loadTwo_2.25s_ease] text-nulight">Educating and Empowering Students to Shape the Future with Artificial Intelligence.</p>
                     <a href="#join" className='w-1/6 h-10 flex items-center justify-center font-sans tracking-tight animate-[loadThree_2.25s_ease] font-medium text-xl bg-nupurple rounded-lg text-white hover:scale-105 duration-200'>Sign Up</a>
                 </div>
-                <iframe className='-mr-80 w-[52%] h-[135%] ml-auto rotate-[-17deg]' src="https://particles-js-gamma.vercel.app"></iframe>
+                <iframe className='-mr-80 w-[52%] h-[135%] ml-auto rotate-[-17deg] z-40' src="https://particles-js-gamma.vercel.app"></iframe>
             </div>
         </div>
     );
