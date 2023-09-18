@@ -2,9 +2,9 @@ import Eventcard from "./eventcard";
 
 export default function Events() {
     return (
-        <div className="h-full w-full flex items-center justify-center flex-col gap-10" id="events">
-            <div className="text-nupurple font-sans font-bold text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight">Events</div>
-            <div className="flex items-center justify-center gap-10 2xl:mt-20">
+        <div className="h-full w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10 lg:pt-0" id="events">
+            <div className="text-nupurple font-sans font-bold text-3xl lg:text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight">Events</div>
+            <div className="flex items-center flex-col lg:flex-row justify-center gap-5 lg:gap-10 2xl:mt-20">
                 <Eventcard
                     title={"Discussions"}
                     text={"We dive deep into AI's transformative impact on various industries and its societal implications. Join us for thought-provoking dialogues led by experts, faculty, and fellow members to explore the ever-evolving landscape of artificial intelligence. It's where curiosity sparks, ideas flourish, and knowledge grows."}
@@ -18,7 +18,7 @@ export default function Events() {
                     id={"speakers"}
                 />
             </div>
-            <div className="flex items-center justify-center gap-10">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
                 <Eventcard
                     title={"Competitions"}
                     text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate"}

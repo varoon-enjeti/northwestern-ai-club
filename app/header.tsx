@@ -73,9 +73,12 @@ export default function Header() {
         );
     } else {
         return (
-            <header className="h-12 w-full fixed flex flex-row text-center bg-gray-300 z-30">
+            <header className="h-12 w-full fixed flex flex-row text-center bg-gray-300 z-30 gap-5">
                 <Link href="#about" className='mr-10'>
                     <p className="">a</p>
+                </Link>
+                <Link href="#events" className='mr-10'>
+                    <p className="">e</p>
                 </Link>
             </header>
         );

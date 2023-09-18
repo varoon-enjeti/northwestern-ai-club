@@ -93,3 +93,10 @@ html {
     height: 36px;
     width: 36px;
 }
+
+@media screen and (max-width: 513px) {
+    #discuss {
+            height: 23px;
+            width: 23px;
+    }
+}
