@@ -17,7 +17,7 @@ export default function Team() {
                         <p className="font-sans font-medium text-md tracking-tight mt-1">Isaac Miller</p>
                         <p className="font-sans font-light text-md tracking-tight">President</p>
                     </div>
-                    <div className="w-full h-56 flex items-center justify-center gap-10">
+                    <div className="w-full h-56 flex items-center justify-center gap-10 -mt-5">
                         <div className="flex flex-col items-center">
                             <a href="https://www.linkedin.com/in/jameskuntz/" className="hover:scale-105 duration-200" target="_blank">
                                 <Image src="/james.jpeg" width={1000} height={1000} alt='' className='h-36 w-36 object-cover rounded-full border-2 border-gray-400'/>
@@ -33,7 +33,7 @@ export default function Team() {
                             <p className="font-sans font-light tracking-tight">Executive Member</p>
                         </div>
                     </div>
-                    <div className="w-full h-56 flex items-center justify-center gap-10">
+                    <div className="w-full h-56 flex items-center justify-center gap-10 -mt-5">
                         <div className="flex flex-col items-center">
                             <a href="https://www.linkedin.com/in/helena-guajardo-298880226/" className="hover:scale-105 duration-200" target="_blank">
                                 <Image src="/helena.jpeg" width={1000} height={1000} alt='' className='h-36 w-36 object-cover rounded-full border-2 border-gray-400'/>
