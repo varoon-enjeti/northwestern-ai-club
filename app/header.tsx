@@ -21,7 +21,9 @@ export default function Header() {
 
     const width = useWindowSize();
 
-    if (width > breakpoint) {
+    if  (width == 0) {
+        <header className="w-full h-12 fixed bg-gray-300"></header>
+    } else if (width > breakpoint) {
         return (
         <header className="lg:h-16 w-full fixed flex flex-row text-center bg-gray-300 z-30" id="header">
                 {scrolled ? 
@@ -80,12 +82,15 @@ export default function Header() {
                 <Link href="#events" className='mr-10'>
                     <p className="">e</p>
                 </Link>
+                <Link href="#team" className='mr-10'>
+                    <p className="">t</p>
+                </Link>
             </header>
         );
     }
 }
 
-function useWindowSize() {
+export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
   const [windowSize, setWindowSize] = useState(0);
 

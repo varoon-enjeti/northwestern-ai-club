@@ -2,7 +2,7 @@ import Eventcard from "./eventcard";
 
 export default function Events() {
     return (
-        <div className="h-full w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10 lg:pt-0" id="events">
+        <div className="h-full w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10" id="events">
             <div className="text-nupurple font-sans font-bold text-3xl lg:text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight">Events</div>
             <div className="flex items-center flex-col lg:flex-row justify-center gap-5 lg:gap-10 2xl:mt-20">
                 <Eventcard
@@ -21,13 +21,13 @@ export default function Events() {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
                 <Eventcard
                     title={"Competitions"}
-                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate"}
+                    text={"Join us for some friendly AI-themed competitions. These events are designed to be fun and educational, catering to all levels of expertise. Whether you're a beginner or an AI aficionado, our competitions provide an opportunity to engage in a bit of healthy competition and learn new skills."}
                     image={"/competitions.svg"}
                     id={"competitions"}
                 />
                 <Eventcard
                     title={"Hackathons"}
-                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate"}
+                    text={"AI Hackathons are time-bound events that provide the perfect platform to collaborate, code, and transform your AI ideas into reality. Whether you're a seasoned developer or a newcomer, our hackathons offer an exciting opportunity to push the boundaries of AI technology and build meaningful solutions."}
                     image={"/code.svg"}
                     id={"code"}
                 />
