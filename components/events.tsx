@@ -2,9 +2,9 @@ import Eventcard from "./eventcard";
 
 export default function Events() {
     return (
-        <div className="mt-20 lg:mt-0 h-screen w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10" id="events">
-            <div className="text-nupurple font-sans font-bold text-3xl lg:text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight mt-100">Events</div>
-            <div className="flex items-center flex-col lg:flex-row justify-center gap-5 lg:gap-10 2xl:mt-20">
+        <div className="mt-20 sm:mt-10 md:mt-0 h-screen w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10" id="events">
+            <div className="text-nupurple font-sans font-bold text-3xl lg:text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight">Events</div>
+            <div className="flex items-center flex-col md:flex-row justify-center gap-5 lg:gap-10 2xl:mt-20">
                 <Eventcard
                     title={"Discussions"}
                     text={"We dive deep into AI's transformative impact on various industries and its societal implications. Join us for thought-provoking dialogues led by experts, faculty, and fellow members to explore the ever-evolving landscape of artificial intelligence. It's where curiosity sparks, ideas flourish, and knowledge grows."}
@@ -18,7 +18,7 @@ export default function Events() {
                     id={"speakers"}
                 />
             </div>
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 lg:gap-10">
                 <Eventcard
                     title={"Competitions"}
                     text={"Join us for some friendly AI-themed competitions. These events are designed to be fun and educational, catering to all levels of expertise. Whether you're a beginner or an AI aficionado, our competitions provide an opportunity to engage in a bit of healthy competition and learn new skills."}
