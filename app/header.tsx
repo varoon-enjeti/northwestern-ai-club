@@ -39,13 +39,13 @@ export default function Header() {
                     </div>
                     <div className='flex flex-row items-center gap-6'>
                         <Link href="https://www.instagram.com/northwestern_ai/" target="_blank" className='animate-[loadOne_1.25s_ease]'>
-                            <Image src="/instagram.svg" width={1000} height={1000} alt='' className='h-6 w-6'/>
+                            <Image src="/instagram.svg" width={1000} height={1000} alt='' className='h-6 w-6 filter hover:contrast-50 transition duration-200'/>
                         </Link>
                         <Link href="https://www.linkedin.com/groups/14288307/" target="_blank" className='animate-[loadOne_1.25s_ease]'>
-                            <Image src="/linkedin.svg" width={1000} height={1000} alt='' className='h-6 w-6'/>
+                            <Image src="/linkedin.svg" width={1000} height={1000} alt='' className='h-6 w-6 hover:contrast-50 transition duration-200'/>
                         </Link>
                         <Link href="mailto:northwesternaiclub@gmail.com?subject=I'm Interested in AI Club!" target="_blank" className='animate-[loadOne_1.25s_ease]'>
-                            <Image src="/mail.svg" width={1000} height={1000} alt='' className='h-7 w-7'/>
+                            <Image src="/mail.svg" width={1000} height={1000} alt='' className='h-7 w-7 hover:contrast-50 transition duration-200'/>
                         </Link>
                     </div>  
                 </div>)
@@ -61,13 +61,13 @@ export default function Header() {
                     </div>
                     <div className='flex flex-row items-center gap-6'>
                         <Link href="https://www.instagram.com/northwestern_ai/" target="_blank" key={1} className='animate-[loadOne_1.25s_ease]'>
-                            <Image src="/instagram.svg" width={1000} height={1000} alt='' className='h-6 w-6'/>
+                            <Image src="/instagram.svg" width={1000} height={1000} alt='' className='h-6 w-6 hover:contrast-50 transition duration-200'/>
                         </Link>
                         <Link href="https://www.linkedin.com/groups/14288307/" target="_blank" key={2} className='animate-[loadOne_1.25s_ease]'>
-                            <Image src="/linkedin.svg" width={1000} height={1000} alt='' className='h-6 w-6'/>
+                            <Image src="/linkedin.svg" width={1000} height={1000} alt='' className='h-6 w-6 hover:contrast-50 transition duration-200'/>
                         </Link>
                         <Link href="mailto:northwesternaiclub@gmail.com?subject=I'm Interested in AI Club!" target="_blank" key={3} className='animate-[loadOne_1.25s_ease]'>
-                            <Image src="/mail.svg" width={1000} height={1000} alt='' className='h-7 w-7'/>
+                            <Image src="/mail.svg" width={1000} height={1000} alt='' className='h-7 w-7 hover:contrast-50 transition duration-200'/>
                         </Link>
                     </div>
                 </div>)}
