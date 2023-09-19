@@ -76,7 +76,10 @@ export default function Header() {
     } else {
         return (
             <header className="h-12 w-full fixed flex flex-row text-center bg-gray-300 z-30 gap-5">
-                <Link href="#about" className='mr-10'>
+                <Link href="/" className='mr-10'>
+                    <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-12 w-12'/>
+                </Link>
+                {/* <Link href="#about" className='mr-10'>
                     <p className="">a</p>
                 </Link>
                 <Link href="#events" className='mr-10'>
@@ -85,6 +88,9 @@ export default function Header() {
                 <Link href="#team" className='mr-10'>
                     <p className="">t</p>
                 </Link>
+                <Link href="#join" className='mr-10'>
+                    <p className="">j</p>
+                </Link> */}
             </header>
         );
     }

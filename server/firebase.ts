@@ -1,6 +1,5 @@
 import { initializeApp, deleteApp } from "firebase/app";
 import { getFirestore, collection, doc, setDoc } from "firebase/firestore";
-import { exit } from "process";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCRBNdSciIhOheTbcPr8WJHZoNyjM2y6Mo",
@@ -15,18 +14,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
- export async function newMember(firstName: string, lastName: string, email: string, netid: string, major: string, year: string){
+ export async function newMember(firstName: string, lastName: string, email: string){
   try {
-    await setDoc(doc(db, "users", netid), {
+    await setDoc(doc(db, "users", email), {
       firstName: firstName,
-      lastName: lastName,
-      email: email,
-      major: major,
-      year: year
+      lastName: lastName
     });
-    console.log("New user " + netid + " added.");
+    console.log("New user " + email + " added.");
   } catch (e) {
-    console.error("Error adding new user " + netid + ".");
+    console.error("Error adding new user " + email + ".");
     console.log(e);
   } finally {
         console.log("Done");
