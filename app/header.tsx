@@ -27,15 +27,15 @@ export default function Header() {
         return (
         <header className="lg:h-16 w-full fixed flex flex-row text-center bg-gray-300 z-30" id="header">
                 {scrolled ? 
-                (<div className="flex flex-row text-center xl:gap-[50vw] 2xl:gap-[65vw]">
-                    <div className='flex flex-row gap-10 text-center items-center'>
-                        <Link href="/" className='mr-10'>
+                (<div className="flex flex-row text-center gap-[15vw] md:gap-[30vw] lg:gap-[35vw] xl:gap-[50vw] 2xl:gap-[65vw]">
+                    <div className='flex flex-row gap-3 md:gap-5 lg:gap-10 text-center items-center'>
+                        <Link href="/" className='mr-0 md:mr-3 lg:mr-10'>
                             <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-16 w-16'/>
                         </Link>
                         <Link href="#about" className='font-sans text-nupurple text-lg hover:text-nulight'>About</Link>
                         <Link href="#events" className='font-sans text-nupurple text-lg hover:text-nulight'>Events</Link>
                         <Link href="#team" className='font-sans text-nupurple text-lg hover:text-nulight'>Team</Link>
-                        <Link href="#join" className='font-sans text-white text-lg bg-nupurple w-20 h-8 flex items-center justify-center animate-[loadOne_1.25s_ease] rounded-lg hover:scale-105 duration-200'>Sign Up</Link>
+                        <Link href="#join" className='font-sans text-white text-lg bg-nupurple md:w-24 w-20 h-8 flex items-center justify-center animate-[loadOne_1.25s_ease] rounded-lg hover:scale-105 duration-200'>Sign Up</Link>
                     </div>
                     <div className='flex flex-row items-center gap-6'>
                         <Link href="https://www.instagram.com/northwestern_ai/" target="_blank" className='animate-[loadOne_1.25s_ease]'>
@@ -50,9 +50,9 @@ export default function Header() {
                     </div>  
                 </div>)
                 :
-                (<div className="flex flex-row text-center xl:gap-96 2xl:gap-[30vw]">
-                    <div className='flex flex-row gap-10 text-center items-center'>
-                        <Link href="/" className='mr-10'>
+                (<div className="flex flex-row text-center gap-5 lg:gap-64 xl:gap-96 2xl:gap-[30vw]">
+                    <div className='flex flex-row gap-5 lg:gap-10 text-center items-center'>
+                        <Link href="/" className='mr-0 md:mr-3 lg:mr-10'>
                             <Image src="/nuai.png" width={1000} height={1000} alt='' className='h-16 w-16'/>
                         </Link>
                         <Link href="#about" className='font-sans text-nupurple text-lg hover:text-nulight'>About</Link>
