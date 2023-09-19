@@ -34,7 +34,7 @@ export default function Join() {
             (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
                     <p className="text-white font-sans font-bold text-3xl lg:text-4xl 2xl:text-5xl tracking-tight">Join the Club!</p>
-                    <div className="flex flex-col items-center w-3/4 lg:w-1/3 h-[296px] lg:h-64 p-10 bg-white drop-shadow-lg rounded-3xl justify-center">
+                    <div className="flex flex-col items-center w-3/4 md:w-1/3 h-[296px] lg:h-64 p-10 bg-white drop-shadow-lg rounded-3xl justify-center">
                         <Image
                             src="/nuai.png"
                             alt='Northwestern AI logo'
@@ -51,7 +51,7 @@ export default function Join() {
             (
                 <div className='h-screen w-full flex flex-col gap-7 pt-8 justify-center items-center'>
                     <p className="text-white font-sans font-bold text-3xl lg:text-4xl 2xl:text-5xl tracking-tight">Join the Club!</p>
-                    <form className="flex flex-col gap-4 lg:gap-7 w-3/4 lg:w-[30%] h-[296px] lg:h-64 px-10 py-10 bg-white drop-shadow-lg rounded-3xl items-center justify-center" onSubmit={submit}>
+                    <form className="flex flex-col gap-4 lg:gap-7 w-3/4 md:w-2/5 lg:w-[30%] h-[296px] lg:h-64 px-10 py-10 bg-white drop-shadow-lg rounded-3xl items-center justify-center" onSubmit={submit}>
                         <div className='flex flex-col w-full lg:flex-row gap-4'>
                             <input 
                                 className="border-2 border-nulight rounded-xl w-full h-11 px-3 text-nupurple" 
