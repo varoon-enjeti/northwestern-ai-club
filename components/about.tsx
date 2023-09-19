@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <div className="w-full h-full flex flex-col-reverse lg:flex-row items-center justify-center gap-3 lg:gap-36" id="about">
-            <div className="flex flex-col w-full lg:w-2/5 px-5 lg:px-0  pt-0 lg:pt-10">
+        <div className="w-full h-screen flex flex-col-reverse lg:flex-row items-center justify-center gap-3 lg:gap-36" id="about">
+            <div className="flex flex-col w-full lg:w-2/5 px-5 lg:px-0 lg:pt-10">
                 <p className='text-nupurple font-sans font-bold text-2xl lg:text-5xl 2xl:text-6xl tracking-tight'>Who We Are</p>
                 <p className='text-nulight font-sans lg:text-xl text-md 2xl:text-2xl leading-snug lg:leading-normal tracking-tight pt-1 pb-5'>{`We are a group of Northwestern students with a wide range of interests and backgrounds, including technical, non-technical, business, and communication expertise. We are committed to keeping doors open to anyone who shares our curiosity and passion for artificial intelligence. Whether you're a seasoned AI enthusiast or just beginning to explore this exciting field, you'll find a place among us. Northwestern AI is a community that thrives on inclusivity, where every perspective is valued, and every member has the opportunity to contribute to our shared journey of learning.`}</p>
                 <p className='text-nupurple font-sans font-bold text-2xl lg:text-5xl 2xl:text-6xl tracking-tight pt-0 lg:pt-5'>What We Do</p>

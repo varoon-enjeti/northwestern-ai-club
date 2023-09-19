@@ -8,7 +8,7 @@ export default function Team() {
 
     if (width < breakpoint) {
         return (
-            <div className="w-full h-full flex flex-col items-center justify-center gap-5" id="team">
+            <div className="w-full h-screen flex flex-col items-center justify-center gap-5" id="team">
                 <p className="font-sans font-bold text-3xl text-nupurple tracking-tight mt-12">Meet the Team!</p>
                     <div className="flex flex-col items-center">
                         <a href="https://www.linkedin.com/in/miller-isaac/" className="hover:scale-105 duration-200" target="_blank">
@@ -53,7 +53,7 @@ export default function Team() {
         )
     } else {
         return (
-            <div className="w-full h-full flex flex-col items-center justify-center gap-10" id="team">
+            <div className="w-full h-screen flex flex-col items-center justify-center gap-10" id="team">
                 <p className="font-sans font-bold text-3xl lg:text-5xl text-nupurple tracking-tight mt-12">Meet the Team!</p>
                 <div className="flex flex-row gap-20">
                     <div className="flex flex-col items-center">

@@ -2,8 +2,8 @@ import Eventcard from "./eventcard";
 
 export default function Events() {
     return (
-        <div className="h-full w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10" id="events">
-            <div className="text-nupurple font-sans font-bold text-3xl lg:text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight">Events</div>
+        <div className="h-screen w-full flex items-center justify-center flex-col gap-3 lg:gap-10 pt-10" id="events">
+            <div className="text-nupurple font-sans font-bold text-3xl lg:text-5xl 2xl:text-6xl 2xl:-mt-36 tracking-tight mt-100">Events</div>
             <div className="flex items-center flex-col lg:flex-row justify-center gap-5 lg:gap-10 2xl:mt-20">
                 <Eventcard
                     title={"Discussions"}
