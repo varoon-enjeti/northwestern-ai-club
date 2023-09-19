@@ -29,7 +29,7 @@ export default function Join() {
     // bg-gradient-to-br from-nupurple via-nulight to-white
 
     return (
-        <div className="w-full h-screen " id="join">
+        <div className="mt-20 lg:mt-0 w-full h-screen " id="join">
             {submitted ? 
             (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
