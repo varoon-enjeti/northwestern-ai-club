@@ -34,7 +34,7 @@ export default function Join() {
             (
                 <div className='h-full w-full flex flex-col gap-7 pt-8 justify-center items-center'>
                     <p className="text-white font-sans font-bold text-3xl lg:text-4xl 2xl:text-5xl tracking-tight">Join the Club!</p>
-                    <div className="flex flex-col items-center w-3/4 md:w-1/3 h-[296px] lg:h-64 p-10 bg-white drop-shadow-lg rounded-3xl justify-center">
+                    <div className="flex flex-col items-center w-3/4 md:w-2/5 lg:w-[30%] h-[296px] lg:h-64 p-10 bg-white drop-shadow-lg rounded-3xl justify-center">
                         <Image
                             src="/nuai.png"
                             alt='Northwestern AI logo'
