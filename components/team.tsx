@@ -61,14 +61,14 @@ export default function Team() {
                             <Image src="/isaac.jpeg" width={1000} height={1000} alt='' className='w-36 h-36 lg:h-48 lg:w-48 object-cover rounded-full border-[3px] lg:border-4 border-gray-400'/>
                         </a>
                         <p className="font-sans font-medium text-lg tracking-tight mt-3">Isaac Miller</p>
-                        <p className="font-sans font-light tracking-tight">President</p>
+                        <p className="font-sans font-light tracking-tight">Co-President</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <a href="https://www.linkedin.com/in/jameskuntz/" className="hover:scale-105 duration-200" target="_blank">
                             <Image src="/james.jpeg" width={1000} height={1000} alt='' className='w-36 h-36 lg:h-48 lg:w-48 object-cover rounded-full border-[3px] lg:border-4 border-gray-400'/>
                         </a>
                         <p className="font-sans font-medium text-lg tracking-tight mt-3">James Kuntz</p>
-                        <p className="font-sans font-light tracking-tight">Vice President</p>
+                        <p className="font-sans font-light tracking-tight">Co-President</p>
                     </div>
                 </div>
                 <div className="flex flex-row gap-10 lg:gap-20">
