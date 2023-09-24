@@ -15,7 +15,7 @@ export default function Team() {
                             <Image src="/isaac.jpeg" width={1000} height={1000} alt='' className='h-36 w-36 object-cover rounded-full border-2 border-gray-400'/>
                         </a>
                         <p className="font-sans font-medium text-md tracking-tight mt-1">Isaac Miller</p>
-                        <p className="font-sans font-light text-md tracking-tight">President</p>
+                        <p className="font-sans font-light text-md tracking-tight">Co-President</p>
                     </div>
                     <div className="w-full h-56 flex items-center justify-center gap-10 -mt-5">
                         <div className="flex flex-col items-center">
@@ -23,7 +23,7 @@ export default function Team() {
                                 <Image src="/james.jpeg" width={1000} height={1000} alt='' className='h-36 w-36 object-cover rounded-full border-2 border-gray-400'/>
                             </a>
                             <p className="font-sans font-medium text-md tracking-tight mt-1">James Kuntz</p>
-                            <p className="font-sans font-light tracking-tight">Vice President</p>
+                            <p className="font-sans font-light tracking-tight">Co-President</p>
                         </div>
                         <div className="flex flex-col items-center">
                             <a href="https://www.linkedin.com/in/gracedowning2024/" className="hover:scale-105 duration-200" target="_blank">
