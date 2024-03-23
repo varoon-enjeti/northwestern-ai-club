@@ -1,2 +1,6 @@
 ## [Northwestern AI Club Website](https://northwestern-ai-club.vercel.app)
-Built with React, Node.js, Next.js, TypeScript, TailwindCSS, Firebase, & Vercel
+
+**Language:** TypeScript
+**Frameworks:** React.js, TailwindCSS
+**Backend:** Node.js, Firebase
+**Hosting:** Vercel
