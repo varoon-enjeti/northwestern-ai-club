@@ -2,6 +2,8 @@
 
 **Language:** TypeScript
 <br />
+**Framework:** Next.js
+<br />
 **Frontend:** React.js, TailwindCSS
 <br />
 **Backend:** Node.js, Firebase
