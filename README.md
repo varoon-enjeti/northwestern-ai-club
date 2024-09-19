@@ -2,7 +2,7 @@
 
 **Language:** TypeScript
 <br />
-**Frontend Frameworks:** React.js, TailwindCSS
+**Frontend:** React.js, TailwindCSS
 <br />
 **Backend:** Node.js, Firebase
 <br />
