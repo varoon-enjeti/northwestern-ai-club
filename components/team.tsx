@@ -149,7 +149,7 @@ export default function Team() {
 							/>
 						</a>
 						<p className="font-sans font-medium text-lg tracking-tight mt-3">
-							Varoon V Enjeti
+							Varoon Enjeti
 						</p>
 						<p className="font-sans font-light tracking-tight">President</p>
 					</div>
